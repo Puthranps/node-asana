@@ -51,7 +51,7 @@ The most minimal example would be as follows:
 ```js
 const asana = require('asana');
 const client = asana.Client.create().useAccessToken('my_access_token');
-client.users.me().then(function(me) {
+client.users.me().then(me => {
   console.log(me);
 });
 ```
